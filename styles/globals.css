@@ -131,4 +131,7 @@ p, li{
   .reverse {
     flex-direction: row-reverse !important;
   }
+  .center {
+    margin-top: 2rem;
+  }
 }

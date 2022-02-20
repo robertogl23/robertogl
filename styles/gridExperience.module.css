@@ -1,13 +1,11 @@
 .layout {
-  margin-top: 4rem;
   min-height: 40rem;
 }
 
 .grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   min-height: inherit;
-  grid-template-columns: repeat(12, minmax(min-content, 1fr));
-  grid-template-rows: repeat(12, 1fr);
   gap: 1rem;
 }
 
@@ -19,38 +17,38 @@
 }
 
 .box ul {
-    padding: .4rem 1rem;
+  padding: 0.4rem 1rem;
 }
 
 .box header {
   background-size: inherit;
   background-repeat: no-repeat;
   background-position: right center;
-  min-height: 18%;
-  margin: .1rem 2rem;
+  min-height: 20px;
+  margin: 0.1rem 1rem;
 }
 
 .box-1 header {
-    background-image: url("../assets/code-solid.svg");
+  background-image: url("../assets/code-solid.svg");
 }
 
 .box-2 header {
-    background-image: url("../assets/sitemap-solid.svg");
+  background-image: url("../assets/sitemap-solid.svg");
 }
 
 .box-3 header {
-    background-image: url("../assets/database-solid.svg");
+  background-image: url("../assets/database-solid.svg");
 }
 
 .box-4 header {
-    background-image: url("../assets/server-solid.svg");
+  background-image: url("../assets/server-solid.svg");
 }
 
 .box footer {
   min-height: 82%;
   background: var(--black-2);
   border-radius: 10px;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .box-1 {
@@ -71,4 +69,24 @@
 .box-4 {
   grid-column: -9 / span 4;
   grid-row: -5 / span 4;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(min-content, 1fr));
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .box header {
+    min-height: 18%;
+  }
+  .layout {
+    margin-top: 4rem;
+  }
+  .box header {
+    margin: 0.1rem 2rem;
+  }
+  .box footer {
+    padding: 1rem 2rem;
+  }
 }
