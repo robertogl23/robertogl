@@ -4,6 +4,7 @@ import SectionLayout from "../components/SectionLayout";
 import styles from "../styles/Home.module.css";
 import programmingSvg from "../assets/programming.svg";
 import GridExperience from "../components/GridExperience";
+import ButtonCV from "../components/ButtonCV";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
               Cuento con experiencia en el desarrollo de aplicaciones
               web/moviles con integraciones a servicios REST/SOAP
             </p>
+            <ButtonCV/>
           </header>
           <div className={styles["image-layout"]}>
             <Image src={programmingSvg} alt="programming" />

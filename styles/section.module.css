@@ -8,13 +8,13 @@
   display: flex;
   flex-direction: column;
   line-height: 1;
-  gap: 1rem;
+  gap: 1.3rem;
   justify-content: center;
 }
 .layout img {
   max-width: inherit !important;
   object-fit: contain !important;
-  max-height: var(--max-height-section-layout) !important;
+  height: inherit !important;
 }
 
 @media screen and (min-width: 1024px) {
