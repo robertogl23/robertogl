@@ -7,7 +7,6 @@
 .layout header {
   display: flex;
   flex-direction: column;
-  line-height: 1;
   gap: 1.3rem;
   justify-content: center;
 }
