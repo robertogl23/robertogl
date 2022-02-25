@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import programmingSvg from "../assets/programming.svg";
 import GridExperience from "../components/GridExperience";
 import ButtonCV from "../components/ButtonCV";
+import GridProjects from "../components/GridProjects";
 
 export default function Home() {
   return (
@@ -32,9 +33,13 @@ export default function Home() {
           </div>
         </SectionLayout>
         <section className="center">
-          <h2>Experiencia con estas <span className="color-pink-1">tenologias!</span></h2>
+          <h2>Experiencia con estas <span className="color-pink-1">Tecnologias!</span></h2>
         </section>
-        <GridExperience/>
+        <GridExperience />
+        <section>
+          <h2>Proyectos <span className="color-green-1">Personales!</span> </h2>
+        </section>
+        <GridProjects/>
       </main>
     </div>
   );

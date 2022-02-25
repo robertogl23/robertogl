@@ -1,5 +1,5 @@
 .layout {
-  min-height: 40rem;
+  min-height: 14rem;
 }
 
 .grid {
@@ -10,7 +10,7 @@
 }
 
 .box {
-  max-height: inherit;
+  min-height: inherit;
   max-width: inherit;
   border-radius: 12px;
   background: var(--purpple-1);
@@ -76,6 +76,7 @@
     display: grid;
     grid-template-columns: repeat(12, minmax(min-content, 1fr));
     grid-template-rows: repeat(12, 1fr);
+    gap: 2rem;
   }
   .box header {
     min-height: 18%;
