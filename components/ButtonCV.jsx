@@ -1,6 +1,15 @@
-import styles from '../styles/buttonCV.module.css';
-export default function ButtonCV() { 
-    return (
-        <a className={styles['btn-cv']} href="" download>CV</a>
-    );
+import styles from "../styles/buttonCV.module.css";
+import Confetti from "../utils/confetti";
+export default function ButtonCV() {
+  const handleClick = () => setInterval(Confetti(), 250);
+  return (
+    <a
+      onClick={handleClick}
+      className={styles["btn-cv"]}
+      href="/roberto-carlos-galicia-lopez.pdf"
+      download
+    >
+      CV
+    </a>
+  );
 }

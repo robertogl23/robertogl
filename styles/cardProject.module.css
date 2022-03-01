@@ -1,0 +1,22 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 32rem;
+  margin-top: 3rem;
+}
+
+.layout header {
+  max-height: inherit;
+  max-width: inherit;
+  display: flex;
+}
+.layout header section {
+  background: var(--black-2);
+  width: 80%;
+}
+
+.layout footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

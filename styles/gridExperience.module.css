@@ -10,7 +10,7 @@
 }
 
 .box {
-  min-height: inherit;
+  max-height: inherit;
   max-width: inherit;
   border-radius: 12px;
   background: var(--purpple-1);
@@ -24,7 +24,7 @@
   background-size: inherit;
   background-repeat: no-repeat;
   background-position: right center;
-  min-height: 20px;
+  min-height: 35px;
   margin: 0.1rem 1rem;
 }
 
@@ -77,6 +77,9 @@
     grid-template-columns: repeat(12, minmax(min-content, 1fr));
     grid-template-rows: repeat(12, 1fr);
     gap: 2rem;
+  }
+  .box {
+    min-height: inherit;
   }
   .box header {
     min-height: 18%;

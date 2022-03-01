@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import programmingSvg from "../assets/programming.svg";
 import GridExperience from "../components/GridExperience";
 import ButtonCV from "../components/ButtonCV";
-import GridProjects from "../components/GridProjects";
+import CardProject from "../components/CardProject";
 
 export default function Home() {
   return (
@@ -24,22 +24,27 @@ export default function Home() {
             <h3 className="color-yellow-1">Programador JR</h3>
             <p>
               Cuento con experiencia en el desarrollo de aplicaciones
-              web/moviles con integraciones a servicios REST/SOAP
+              web/móviles con integración a servicios REST/SOAP.
             </p>
-            <ButtonCV/>
+            <ButtonCV />
           </header>
           <div className={styles["image-layout"]}>
             <Image src={programmingSvg} alt="programming" />
           </div>
         </SectionLayout>
         <section className="center">
-          <h2>Experiencia con estas <span className="color-pink-1">Tecnologias!</span></h2>
+          <h2>
+            Experiencia con estas{" "}
+            <span className="color-pink-1">Tecnologías!</span>
+          </h2>
         </section>
         <GridExperience />
-        <section>
-          <h2>Proyectos <span className="color-green-1">Personales!</span> </h2>
+        {/* <section className="center">
+          <h2>
+            Proyectos <span className="color-green-1">Personales!</span>{" "}
+          </h2>
         </section>
-        <GridProjects/>
+        <CardProject /> */}
       </main>
     </div>
   );
